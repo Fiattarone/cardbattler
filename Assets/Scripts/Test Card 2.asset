@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971ddb000f11143e2a35f87d79910418, type: 3}
   m_Name: Test Card 2
   m_EditorClassIdentifier: 
-  cardName: Test Card 2
-  actionDescription: Testing Another Card
-  cardLore: The second test card of many
+  cardName: Trolled
+  actionDescription: You've been trolled
+  cardLore: Never was he trolled so hard
   currentHealth: 3
   attackPower: 5
   manaCost: 23

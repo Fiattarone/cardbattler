@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971ddb000f11143e2a35f87d79910418, type: 3}
   m_Name: Test Card 1
   m_EditorClassIdentifier: 
-  cardName: Test Card 1
-  actionDescription: Testing Card
+  cardName: Shroomy Doomy
+  actionDescription: Shroom of Doom
   cardLore: The first of many test cards
   currentHealth: 12
   attackPower: 23

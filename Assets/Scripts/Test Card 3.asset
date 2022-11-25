@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971ddb000f11143e2a35f87d79910418, type: 3}
   m_Name: Test Card 3
   m_EditorClassIdentifier: 
-  cardName: OctoTard
-  actionDescription: Retardation with 8 legs
+  cardName: Octomonoous
+  actionDescription: 'Octodeath '
   cardLore: Help me
   currentHealth: 3
   attackPower: 5
