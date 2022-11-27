@@ -291,6 +291,7 @@ MonoBehaviour:
   heldCards: []
   minPos: {fileID: 1530917765}
   maxPos: {fileID: 1753709814}
+  cardPositions: []
 --- !u!4 &49379434
 Transform:
   m_ObjectHideFlags: 0
