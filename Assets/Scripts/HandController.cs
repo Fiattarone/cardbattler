@@ -26,14 +26,15 @@ public class HandController : MonoBehaviour
 
 		Vector3 distanceBetweenPoints = Vector3.zero;
 
-		if (heldCards.Length > 1) {
-			distanceBetweenPoints = (maxPos.position - minPos.position) / (heldCards.Length - 1);
+		if (heldCards.Count > 1) {
+			distanceBetweenPoints = (maxPos.position - minPos.position) / (heldCards.Count - 1);
 		}
 
-		for (int i = 0; i < heldCards.Length; i++) {
+		for (int i = 0; i < heldCards.Count; i++) {
 			cardPositions.Add(minPos.position + (distanceBetweenPoints * i));
 
-			heldCards[i].transform.position = cardPositions[i];	
+			heldCards[i].transform.position = cardPositions[i];
+			heldCards[i].transform.rotation = minPos.rotation;	
 		}
 	}
 }
