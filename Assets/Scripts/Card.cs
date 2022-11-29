@@ -12,6 +12,12 @@ public class Card : MonoBehaviour {
 	public TMP_Text healthText, attackText, costText, nameText, actionDescriptionText, loreText;
 
 	public Image charArt, bgArt;
+
+	private Vector3 targetPoint;
+	private Quaternion targetRot;
+
+	public float moveSpeed = 4f, rotateSpeed = 540f;
+
     // Start is called before the first frame update
     void Start() {
         SetupCard();
@@ -36,8 +42,13 @@ public class Card : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+        transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
+		transform.rotation = Quaternion.RotateTowards(transform.rotate, targetRot, rotateSpeed * Time.deltaTime);
     }
+
+	public void MoveToPoint(Vector3 pointToMoveTo, Quaternion rotToMatch) {
+		targetPoint = pointToMoveTo;
+		targetRot = rotToMatch;
+	}
 }
