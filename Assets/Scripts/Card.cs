@@ -44,7 +44,7 @@ public class Card : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
-		transform.rotation = Quaternion.RotateTowards(transform.rotate, targetRot, rotateSpeed * Time.deltaTime);
+		transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotateSpeed * Time.deltaTime);
     }
 
 	public void MoveToPoint(Vector3 pointToMoveTo, Quaternion rotToMatch) {
